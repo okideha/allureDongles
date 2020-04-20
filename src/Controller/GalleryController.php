@@ -15,11 +15,11 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class DashboardController extends AbstractController
+class GalleryController extends AbstractController
 {
 
     /**
-     * @Route("/gallery/index", name="gallery",methods={"get"})
+     * @Route("/gallery", name="gallery",methods={"get"})
      */
     public function index(PhotoRepository $photoRepo):Response
     {        
