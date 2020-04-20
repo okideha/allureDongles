@@ -1,0 +1,19 @@
+<h2>Insérer photo</h2>
+
+{# <form action="#" method="post">
+    <div>
+        <label for="title">Titre</label><br>
+        <input type="text" id="title" name="title">
+    </div>
+    <div>
+        <label for="description">Description</label><br>
+        <textarea row="5" col="10" id="description" name="description"></textarea>
+    </div>
+    <input type="submit" value="Ajouter">
+</form> #}
+{# {{form(addPhotoForm)}} #}
+{{form_start(addPhotoForm)}}
+    {{form_widget(addPhotoForm  )}}
+    <input type="submit" value="Ajouter">
+ 
+ {{form_end(addPhotoForm)}}

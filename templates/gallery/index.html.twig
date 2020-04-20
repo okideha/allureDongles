@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<a href="{{path('addPhoto')}}">Ajouter photo</a>
+
+    <h1>Dash Board</h1>
+
+    <h2>Liste des photos</h2>
+
+    {% if photos|length > 0 %}
+        {% for photo in photos %}
+            <article>
+                <a href="{{path('show',{id:photo.id})}}"><h2>{{photo.title}}</h2></a>
+                <p>{{photo.description}}</p>
+            </article>   
+        {% endfor %}
+    {% else %}
+        <p>Pas de photos</p>
+    {% endif %}
+
+    
+    
+</body>
+</html>
